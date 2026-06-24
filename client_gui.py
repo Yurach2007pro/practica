@@ -1,10 +1,11 @@
 import socket
 import threading
 import json
-import tkinter as tk
+import tkinter as tkimport ssl
 from tkinter import simpledialog, scrolledtext, messagebox
 from datetime import datetime, timezone
 
+CA_CERT = "cert.pem"  # путь к сертификату сервера
 SERVER_IP = "192.168.1.5"  # замените на IP сервера
 SERVER_PORT = 5000
 
